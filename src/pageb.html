@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageb</title>
+</head>
+<body>
+    <div id='feedback' style="background-color: yellow;" onclick="greetings()">
+        users without javascript ses this
+
+    </div>
+
+    <p>
+        <button onclick='goodbye()'>
+                sumbit
+        </button>
+    </p>
+    <script>
+document.getElementById('feedback').innerHTML='hello world';
+
+function goodbye(){
+    document.getElementById('feedback').innerHTML='goodbye world';
+
+}
+
+function greetings(){
+    document.getElementById('feedback').innerHTML='greeting all';
+    
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script type="text/javascript" src="script.js"></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+    <div class="heading">
+        <h1>Learn to code by watching others</h1>
+     </div>
+
+        <div  class="subtext">
+          <p>  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+            but understanding how developers think is invaluable. 
+          </p>
+        </div>
+      </header>
+     <div class="try-box">
+       <button> Try it free 7 days <span>then $20/mo. thereafter</span></button>
+  <form name="myForm">
+
+     <div class="input-box">
+        <input type="text" name="fname" value="Jonathan" size="30" placeholder="First Name"/>
+        <p class="error-msg-f ">First Name cannot be empty</p>
+        <input type="text" name="lname"   size="30" placeholder=" Last Name "/>
+        <p class="error-msg-l">Last Name cannot be empty</p>
+
+        <input type="email" name="email"  placeholder="  Email Address"/>
+        <p class="error-msg-e">enter the valid email id</p>
+
+        <input type="password" name="password" size="8" placeholder="  Password"/>
+        <p class="error-msg-p">Password  cannot be empty</p>
+
+
+        <button type="submit" onclick="checkForm()">CAIM YOUR FREE TRIAL</button>
+</form>
+
+
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </p>
+     </div>
+
+    </div>
+
+  </div>
+<script type="text/javascript">
+
+function checkForm() {
+            var formFname = document.myForm.fname;
+            var formLname = document.myForm.lname;
+            var formEmail = document.myForm.email;
+            var formPassword = document.myForm.password;
+            if (formFname.value.indexOf(" ") == -1) {
+
+              document.querySelector(".error-msg-f").style.display = 'block';
+                formFname.focus();
+                return;
+            }
+            else{
+              return true;
+              form.focus();
+
+            }
+            if (formLname.value.indexOf(" ") == -1) {
+              document.querySelector(".error-msg-l").style.display = 'block';
+
+                form.focus();
+                return;
+            }
+            if (formEmail.value.indexOf("@") == -1 || 
+            formEmail.value.indexOf(".") == -1) {
+              document.querySelector(".error-msg-e").style.display = 'block';
+
+                formEmail.focus();
+                return;
+            }
+
+            if (formPassword.value.indexOf(" ") == -1) {
+              document.querySelector(".error-msg-p").style.display = 'block';
+
+              
+                formPassword.focus();
+                return;
+            }
+          }
+</script>
+
+   
+
+    
+  
+</body>
+</html>

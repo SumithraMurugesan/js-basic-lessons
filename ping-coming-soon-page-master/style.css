@@ -1,0 +1,142 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    min-width: 1440px;
+    max-height: 100%;
+font-family: 'Libre Franklin', sans-serif;
+}
+
+.wrapper{
+    width: 644px;
+    margin-left: 25%;   
+    margin-top: 100px; 
+
+}
+
+.ping-logo{
+
+    text-align: center;
+
+}
+
+.heading{
+
+
+    text-align: center;
+
+}
+
+#error-msg{
+    color: red;
+    text-align: left;
+    font-style: italic;
+
+}
+
+.heading h1{
+    font-weight: 300;
+font-size: 50px;
+color: hsl(0, 0%, 59%);
+line-height: 25px;
+
+}
+
+.heading p{
+    color: black;
+    font-size: 24px;
+}
+
+span{
+    font-weight: 700;
+    color: black;
+}
+
+.email-box input{
+    margin: 0px;
+    text-align: left;
+    width: 425px;
+    height: 52px;
+    border-radius: 40px;
+    border-color: hsl(223, 100%, 88%);
+    opacity: 70%;
+    
+}
+ button{
+    height: 52px;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: 2px 2px 2px 2px #d4dff7;
+    opacity: 87%;
+ }
+
+ button:hover{
+     opacity: 78%;
+ }
+
+.center-image{
+    text-align: center;
+    width: 644px;
+    height: 390px;
+    display: flex;
+    padding-bottom: 59px ;
+    padding-top: 84px;
+}
+
+ p{
+     text-align: center;
+    color:hsl(0, 0%, 59%) ;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+.social-media-icon{
+    text-align: center;
+
+}
+
+.fa{
+    padding: 10px;
+    border-width: 1px;
+    text-decoration: none;
+    border-style: solid;  
+    border-radius: 50%;
+    border-color:hsl(0, 0%, 59%) ; 
+    color: blue;
+
+    justify-content: space-between
+
+}
+
+.fa-instagram:hover{
+        background-color: blue;
+        color: white;
+  }
+
+.fa-twitter:hover{
+
+
+    background-color: blue;
+    color: white;
+
+}
+.fa-facebook:hover{
+    background-color: blue;
+    color: white;
+
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
