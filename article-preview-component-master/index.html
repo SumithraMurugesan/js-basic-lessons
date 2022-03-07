@@ -16,53 +16,67 @@
   </style>
 </head>
 <body>
+  <main class="container">
+    <section class="main-body">
+      <img src="./images/drawers.jpg" alt="Drawer Image" class="mb-img">
+    </section>
 
-  <div class="container">
-    <img src="..//article-preview-component-master/images/drawers.jpg" style="height: 284px; width: 284px;">
-    <div class="text">
-      <div class="heading">
-        Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-      </div>
+    <section class="description">
+      <h2 class="header-text">
+        Shift the overall look and feel by adding these wonderful touches to
+        furniture in your home
+      </h2>
+      <p class="para-text">
+        Ever been in a room and felt like something was missing? Perhaps it
+        felt slightly bare and uninviting. I’ve got some simple tips to help
+        you make any room feel complete.
+      </p>
 
-      <div class="subtext">
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.
-      </div>
-      <div class="person">
-        <div class="images">
-          <img src="..//article-preview-component-master/images/avatar-michelle.jpg " width="300px">
+      <div class="bottom">
+        <div class="details">
+          <img
+            src="./images/avatar-michelle.jpg" alt="Michelle's Avatar" class="contact-img"
+          >
           <div class="name">
-           <p>Michelle Appleton</p>  
-            <p>28 Jun 2020</p>
+            <h1>Michelle Appleton</h1>
+            <p class="date">28 Jun 2020</p>
           </div>
         </div>
-
-          <button id="button">
-            <img src="..//article-preview-component-master/images/icon-share.svg">
-
-          </button>
-      </div>
-      <div class="share">
-        share
-        <div class="shareSvg">
-            <img src="..//article-preview-component-master/images/icon-facebook.svg">
-            <img src="..//article-preview-component-master/images/icon-twitter.svg">
-            <img src="..//article-preview-component-master/images/icon-pinterest.svg">
-
+        <div class="share-btn">
+          <img src="./images/icon-share.svg" alt="Share Icon" class="share-icon" >
         </div>
+      </div>
+    </section>
 
+    <div class="share">
+      <p>SHARE</p>
+      <div class="share-img">
+        <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="social-img">
+        <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="social-img">
+        <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="social-img">
+      </div>
+      <div class="share-btn">
+        <img src="./images/icon-share.svg" alt="Share Icon" class="share-button share-icon" >
       </div>
     </div>
-
-  </div>
-
-
+  </main>
     
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Sumithra</a>.
   </div>
+
+  <script>
+    const shareButtons = document.querySelectorAll('.share-btn')
+const shareDisplay = document.querySelector('.share')
+
+function handleClick() {
+  shareDisplay.classList.toggle('active')
+}
+
+shareButtons.forEach((button) => {
+  button.addEventListener('click', handleClick)
+})
+  </script>
 </body>
 </html>
