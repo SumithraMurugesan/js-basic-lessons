@@ -7,14 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script type="text\javascript" src="script.js"></script>
+  <link rel="stylesheet" href="./themes/style.css">
 </head>
 <body>
   <body>
@@ -62,48 +56,6 @@
         </div>
       </div>
     </section>
-    <script>
-        const prev = document.querySelector(".prev");
-    const next= document.querySelector(".next");
-    const slides = document.querySelectorAll(".slide");
-    
-    let index = 0;
-    
-    display(index);
-    
-    function display (index) {
-        slides.forEach((slide) => {
-            slide.style.display = "none";
-        });
-        slides[index].style.display = "flex"
-    }
-    
-    function nextslide() {
-        index++;
-        if(index > slides.length - 1){
-            index = 0;
-        }
-        display(index);
-    }
-    
-    function prevslide() {
-        index--;
-        if(index < 0){
-            index = slides.length - 1;
-        }
-        display(index);
-    }
-    next.addEventListener("click", nextslide);
-    
-    prev.addEventListener("click", prevslide);
-      </script>
-  
 
-
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">sumithra</a>.
-  </div>
 </body>
 </html>

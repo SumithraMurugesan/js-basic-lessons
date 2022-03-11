@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script type="text/javascript" src="script.js"></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="./themes/style.css"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -58,51 +52,5 @@
     </div>
 
   </div>
-<script type="text/javascript">
-
-function checkForm() {
-            var formFname = document.myForm.fname;
-            var formLname = document.myForm.lname;
-            var formEmail = document.myForm.email;
-            var formPassword = document.myForm.password;
-            if (formFname.value.indexOf(" ") == -1) {
-
-              document.querySelector(".error-msg-f").style.display = 'block';
-                formFname.focus();
-                return;
-            }
-            else{
-              return true;
-              form.focus();
-
-            }
-            if (formLname.value.indexOf(" ") == -1) {
-              document.querySelector(".error-msg-l").style.display = 'block';
-
-                form.focus();
-                return;
-            }
-            if (formEmail.value.indexOf("@") == -1 || 
-            formEmail.value.indexOf(".") == -1) {
-              document.querySelector(".error-msg-e").style.display = 'block';
-
-                formEmail.focus();
-                return;
-            }
-
-            if (formPassword.value.indexOf(" ") == -1) {
-              document.querySelector(".error-msg-p").style.display = 'block';
-
-              
-                formPassword.focus();
-                return;
-            }
-          }
-</script>
-
-   
-
-    
-  
 </body>
 </html>
