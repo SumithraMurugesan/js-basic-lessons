@@ -32,9 +32,9 @@ body {
 }
 
 .container {
-  padding: 0 12rem;
-  max-width: 55%;
   height: auto;
+  max-width: 55%;
+  padding: 0 12rem;
 }
 
 .logo {
@@ -42,8 +42,8 @@ body {
 }
 
 .image-container {
-  height: 100vh;
   float: right;
+  height: 100vh;
 }
 
 .image-container img.hero-desktop {
@@ -64,8 +64,8 @@ body {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1rem;
-  text-transform: uppercase;
   line-height: 3.5rem;
+  text-transform: uppercase;
 }
 
 .content h1 span {
@@ -84,8 +84,8 @@ body {
 }
 
 .form-group {
-  margin-top: 2.5rem;
   height: 3rem;
+  margin-top: 2.5rem;
   position: relative;
 }
 
@@ -93,8 +93,8 @@ body {
   border: 1px solid var(--red-light);
   border-radius: 2rem;
   color: var(--red-light);
-  padding: 0.2rem 1.5rem;
   height: 100%;
+  padding: 0.2rem 1.5rem;
   width: 100%;
 }
 
@@ -103,12 +103,12 @@ body {
   border: 0;
   border-radius: 2rem;
   box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
-  position: absolute;
-  height: 100%;
-  width: 5rem;
-  top: 0;
-  right: 0;
   cursor: pointer;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
 }
 
 input::placeholder {
@@ -137,9 +137,9 @@ button:focus {
 }
 
 .icon-error {
+  display: none;
   position: absolute;
+  right: 5.8rem;
   top: 50%;
   transform: translateY(-50%);
-  right: 5.8rem;
-  display: none;
 }

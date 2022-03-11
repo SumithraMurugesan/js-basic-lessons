@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
+  --darkGrayBlue: hsl(240, 6%, 50%);
+  --fontSize: 12px;
+  --lightGrayBlue: hsl(240, 5%, 91%);
   --softRed: hsl(14, 88%, 65%);
   --veryDarkGrayBlue: hsl(237, 12%, 33%);
-  --darkGrayBlue: hsl(240, 6%, 50%);
-  --lightGrayBlue: hsl(240, 5%, 91%);
-  --fontSize: 12px;
 }
 *,
 *:before,
@@ -18,27 +18,27 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  height: 100vh;
-  width: 100vw;
+  align-content: center;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   display: grid;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
-  align-content: center;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
 }
 
 .wrapper {
   background: white;
   border-radius: 30px;
-  height: 509px;
-  width: 920px;
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  grid-gap: 6rem;
   background-image: url(..//faq-accordion-card-main/images/bg-pattern-desktop.svg );
   background-repeat: no-repeat;
   background-position: 1260% 65%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 6rem;
+  height: 509px;
+  width: 920px;
 }
 
 .question-answer__accordion > .answer {
@@ -46,9 +46,9 @@ body {
 }
 
 .active > .answer {
+  color: var(--darkGrayBlue);
   display: block;
   padding-bottom: 1.3rem;
-  color: var(--darkGrayBlue);
 }
 
 .active img {
@@ -57,21 +57,20 @@ body {
 }
 
 .accordion__wrapper {
-  margin-top: 65px;
-
   display: flex;
   flex-direction: column;
+  margin-top: 65px;
 }
 
 .questions__accordions {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .question-answer__accordion {
-  width: 350px;
   border-bottom: 1px solid #e8e8ea;
+  width: 350px;
 }
 .title__accordion {
   font-size: 3rem;
@@ -79,16 +78,16 @@ body {
 }
 
 .title__question {
+  color: (var(--veryDarkGrayBlue));
   font-weight: 400;
   font-size: 1.2rem;
-  color: (var(--veryDarkGrayBlue));
   margin: 1.4rem 0rem;
 }
 
 .question {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   transition: 0.4s;
 }
 
@@ -106,9 +105,9 @@ body {
 
 .image__wrapper_inner {
   background: url(..//faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
-  height: 100%;
   background-repeat: no-repeat;
   background-position: 120% center;
+  height: 100%;
 }
 
 .box {

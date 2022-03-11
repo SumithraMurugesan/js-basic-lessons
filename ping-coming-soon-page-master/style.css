@@ -5,16 +5,16 @@ body, html{
 }
 
 body{
+    font-family: 'Libre Franklin', sans-serif;
     height: 100vh;
     min-width: 1440px;
     max-height: 100%;
-font-family: 'Libre Franklin', sans-serif;
 }
 
 .wrapper{
-    width: 644px;
     margin-left: 25%;   
     margin-top: 100px; 
+    width: 644px;
 
 }
 
@@ -33,15 +33,15 @@ font-family: 'Libre Franklin', sans-serif;
 
 #error-msg{
     color: red;
-    text-align: left;
     font-style: italic;
+    text-align: left;
 
 }
 
 .heading h1{
+    color: hsl(0, 0%, 59%);
     font-weight: 300;
 font-size: 50px;
-color: hsl(0, 0%, 59%);
 line-height: 25px;
 
 }
@@ -52,30 +52,30 @@ line-height: 25px;
 }
 
 span{
-    font-weight: 700;
     color: black;
+    font-weight: 700;
 }
 
 .email-box input{
-    margin: 0px;
-    text-align: left;
-    width: 425px;
-    height: 52px;
     border-radius: 40px;
     border-color: hsl(223, 100%, 88%);
+    height: 52px;
+    margin: 0px;
     opacity: 70%;
+    text-align: left;
+    width: 425px;
     
 }
  button{
-    height: 52px;
-    width: 200px;
-    color: white;
-    font-size: 15px;
     background-color: hsl(223, 87%, 63%);
     border-radius: 30px;
     border-style: none;
     box-shadow: 2px 2px 2px 2px #d4dff7;
+    color: white;
+    font-size: 15px;
+    height: 52px;
     opacity: 87%;
+    width: 200px;
  }
 
  button:hover{
@@ -83,19 +83,19 @@ span{
  }
 
 .center-image{
-    text-align: center;
-    width: 644px;
-    height: 390px;
     display: flex;
+    height: 390px;
     padding-bottom: 59px ;
     padding-top: 84px;
+    text-align: center;
+    width: 644px;
 }
 
  p{
-     text-align: center;
     color:hsl(0, 0%, 59%) ;
     font-size: 11px;
     padding-bottom: 20px;
+     text-align: center;
 }
 
 .social-media-icon{
@@ -104,15 +104,14 @@ span{
 }
 
 .fa{
-    padding: 10px;
     border-width: 1px;
-    text-decoration: none;
     border-style: solid;  
     border-radius: 50%;
     border-color:hsl(0, 0%, 59%) ; 
     color: blue;
-
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
 
 }
 

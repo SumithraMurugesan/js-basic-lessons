@@ -1,106 +1,106 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
-    font-size: 20px;
     color: hsl(240, 38%, 20%);
+    font-size: 20px;
     font-family: 'Inter' , sans-serif;
-    max-width: 1440px;
     height: 100vh;
+    max-width: 1440px;
 }
 .container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: url(..//coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg) no-repeat left bottom;
     background-size: 70%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .slider{
     display: block;
     height: 100%;
-    width: 100%;
     max-width: 850px;
     margin: 0 auto;
     position: relative;
+    width: 100%;
 }
 .slide{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
     align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     text-align: center;
+    width: 100%;
 }
 .img{
-    width: fit-content;
+    background-size: contain;
+    background: url(..//coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg) no-repeat center;
     height: 100%;
     margin: 0 auto;
     padding: 40px;
-    background: url(..//coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg) no-repeat center;
-    background-size: contain;
+    width: fit-content;
 }
 .img img{
-    height: 100%;
-    width: 300px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0 hsl(240, 14%, 77%);
+    height: 100%;
+    width: 300px;
 }
 .testimonial{
-    margin-top: 30px;
-    padding: 30px 0;
-    width: 320px;
     background: url(..//coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg) no-repeat top center;
     background-size: 65px;
     line-height: 27px;
+    margin-top: 30px;
+    padding: 30px 0;
+    width: 320px;
 }
 .author{
     font-size: 18px;
-    margin-top: 20px;
     font-weight: 700;
     line-height: 25px;
+    margin-top: 20px;
 }
 
 .buttons{
-    position: absolute;
-    top: 315px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
-    height: 45px;
     background-color: #ffffff;
     border-radius: 50px;
     box-shadow: -20px 12px 20px 20px hsl(240, 14%, 77%, 0.52);
+    height: 45px;
+    left: 50%;
+    position: absolute;
+    top: 315px;
+    transform: translateX(-50%);
+    width: 90px;
 }
 .prev, .next{
-    width: 50%;
-    height: 100%;
-    display: inline-block;
-    position: absolute;
     cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    width: 50%;
 }
 .prev:hover, .next:hover{
     background-color: hsl(240, 14%, 77%, 0.52);
 }
 
 .prev{
-    left: 0;
     border-radius: 50px 0 0 50px;
+    left: 0;
 }
 .next{
-    right: 0;
     border-radius: 0 50px 50px 0;
+    right: 0;
 }
 .prev::after, .next::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
     background: no-repeat center;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 .prev::after{
     background-image: url(..//coding-bootcamp-testimonials-slider-master/images/icon-prev.svg);
@@ -111,12 +111,12 @@ body{
 
 
 span{
+    color: hsl(240, 18%, 77%);
     display: block;
     font-weight: 500;
-    color: hsl(240, 18%, 77%);
 }
 
-/* 
+
 @media only screen and (max-width: 1440px){
     .container{
         margin: 0 auto;
@@ -142,4 +142,4 @@ span{
         left: 52%;
         transform: none;
     }
-} */
+}
