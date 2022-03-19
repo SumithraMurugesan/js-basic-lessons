@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital@1&family=Barlow+Semi+Condensed:wght@500&family=Libre+Franklin:ital,wght@0,300;0,600;1,700&family=Raleway:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./themes/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./script/script.js"></script>
+</head>
+
+<body>
+  <form name="myform">
+    <div class="wrapper">
+      <div class="ping-logo">
+        <img src="..//ping-coming-soon-page-master/images/logo.svg">
+      </div>
+      <div class="heading">
+        <h1>We are launching <span>soon!</span></h1>
+        <p> Subscribe and get notified</p>
+      </div>
+      <div class="email-box">
+        <input type="text" name="text1" placeholder="  Your email address...">
+        <button type="submit" name="notify" onclick="ValidateEmail(document.myform.text1)">Notify Me</button>
+        <p id="error-msg"></p>
+      </div>
+      <div class="center-image">
+        <img src="..//ping-coming-soon-page-master/images/illustration-dashboard.png">
+      </div>
+      <div class="social-media-icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+  </form>
+  </div>
+</body>
+
+</html>

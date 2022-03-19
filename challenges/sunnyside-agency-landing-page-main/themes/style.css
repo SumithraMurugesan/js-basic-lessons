@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+*{
+      margin: 0%;
+      padding: 0%;
+  }
+:root{
+           --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+           --dark-blue: hsl(198, 62%, 26%);
+           --dark-desaturated-cyan:  hsl(167, 40%, 24%);
+           --dark-grayish-blue: hsl(232, 10%, 55%);
+           --dark-moderate-cyan: hsl(168, 34%, 41%);
+           --grayish-blue: hsl(210, 4%, 67%);
+           --soft-red: hsl(7, 99%, 70%);
+           --very-dark-grayish-blue: hsl(213, 9%, 39%);
+           --white:hsl(0, 0%, 100%);
+           --yellow: hsl(51, 100%, 49%);
+       }
+body {
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      height: 100vh;
+      margin: 0%;
+      padding: 0%;
+      width: 1440px;
+  }
+footer {
+      background-color: hsl(168, 42%, 64%);
+      opacity: 77%;
+      text-align: center;
+      width: 100%;
+  }
+footer h3 {
+      color: var(--dark-desaturated-cyan);
+      font-size: 35px;
+      padding-bottom: 3rem;
+      padding-top: 4rem;
+  }
+.footer1-list {
+      padding-bottom: 6rem;
+  }
+.footer1-list a {
+      color: var(--dark-desaturated-cyan);
+      font-size: 18px;
+      text-decoration: none;
+  }
+ul {
+      white-space: nowrap;
+  }
+ .footer1-list li {
+       display: inline;
+       justify-content: space-between;
+       word-spacing: 3rem;
+   }
+.social-icons li {
+      display: inline;
+      justify-content: space-between;
+      padding: 1rem;
+  }
+.social-icons {
+      padding-bottom: 3rem;
+  }
+.images-box {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+  }
+.images-box img {
+      width: 100%;
+  }
+.testimonial-main {
+      justify-content: center;
+      padding:  10rem 0rem;
+  }
+.testimonials {
+      display: flex;
+      flex-direction: row;
+      margin-left: 4rem;
+      margin-top: 5rem;
+      text-align: center;
+      width: 100vw;
+  } 
+.testimonial {
+      padding: 1rem ;
+  }
+.heading {
+      color: var(--very-dark-grayish-blue);
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+.testimonial-img img {
+      border-radius: 50%;
+  }
+.text {
+      color: var(--very-dark-grayish-blue);
+      font-size: 1.3vw;
+      line-height: 2rem;
+      margin-top: 4rem;
+      text-align: center;
+  }
+.author {
+      line-height: 2rem;
+      margin-top: 4rem;
+  }
+.author .name {
+      color: var(--Very-dark-desaturated-blue);
+      font-family: 'Fraunces' serif;
+      font-size: 1.5vw;
+  }
+.author .role {
+      color: var(--grayish-blue);
+      font-size: 1vw;
+  }
+.fruits-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+  }
+.fruits-container img{
+      width: fit-content;
+  }
+.fruits-content {
+        align-items: center;
+        bottom: 2rem;
+        padding-left: 7rem;
+        position: absolute;
+        text-align: center;
+    }
+.head {
+      color: var(--dark-blue);
+      font-family: 'Fraunces', serif;
+      font-size: 2vw;
+      line-height: normal;
+      padding-bottom: 2rem;
+      text-align: center;
+  }
+.content {
+      color: var(--dark-blue);
+      font-size: 1.3vw;
+      opacity: 0.8;
+      padding-bottom: 2rem;
+      text-align: center;
+  }
+.egg-container {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+  }
+.glass-container {
+      display: flex;
+      flex-direction: row;
+  }
+.egg-content {
+      margin-left: 10rem;
+      margin-right: 4rem;
+      margin-top:8rem;
+  }
+.egg-content h1 {
+      font-size: 40px;
+      opacity: 77%;
+      padding-bottom: 3rem;
+  }
+.egg-content p {
+      color: var(--grayish-blue);
+      font-family: 'Barlow',serif;
+      line-height: 1.8rem;
+      padding-bottom: 2rem;
+  }
+.egg-content a {
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+.glass-content {
+      margin-left: 10rem;
+      margin-right: 4rem;
+      margin-top:8rem;
+  }
+.glass-content h1 {
+      font-size: 40px;
+      opacity: 77%;
+      padding-bottom: 3rem;
+  }
+.glass-content p {
+      color: var(--grayish-blue);
+      font-family: 'Barlow',serif;
+      line-height: 1.8rem;
+      padding-bottom: 2rem;
+  }
+.glass-content a {
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+nav {
+      display: flex;
+      font-family: 'Barlow',sans-serif;
+      justify-content: space-around;
+      padding:20px;
+      width:100%;
+  }
+nav ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      width:80%;
+  }
+nav ul li {
+      cursor:pointer;
+      list-style: none;
+  }
+nav button {
+      background-color: white;
+      border-radius: 25px;
+      border-width: 0;
+      font-family: 'Fraunces',sans-serif;
+      height:50px;
+      text-transform: uppercase;
+      width: 100px;
+  }
+nav input {
+      height:47px;
+      opacity: 0;
+      position: absolute;
+      width:35px;
+  }
+nav h1 {
+      font-size:2em;
+      font-weight: 800;
+  }
+.first-page {
+      background-image: url("../images/desktop/image-header.jpg");
+      background-position: center;
+      background-size: cover;
+      color:white;
+      height:100vh;
+  }
+.hamburger-menu {
+      align-items: center;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+  }
+.hamburger-menu img {
+      width:35px;
+  }
+.left-side {
+      display: flex;
+      justify-content:center;
+      width:100%;
+  }
+.right-side {
+      width:100%;
+  }
+.first-page-body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width:100%;
+  }
+.first-page-body img {
+      margin-top:80px;
+      width: 40px;
+  }
+.first-page-body h1 {
+      color: white;
+      font-family: 'Fraunces', sans-serif;
+      font-size:3em;
+  }
+.heading {
+      display: flex;
+      justify-content: center;
+      padding-top:80px;
+  }
+@media screen and (max-width:375){
+  }

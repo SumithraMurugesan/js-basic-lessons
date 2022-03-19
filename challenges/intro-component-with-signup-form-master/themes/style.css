@@ -1,0 +1,105 @@
+*{
+      margin: 0;
+      padding: 0;
+  }
+body {
+      background-color: hsl(0, 100%, 74%);
+      background-image: url(../images/bg-intro-desktop.png);
+      background-repeat: no-repeat;
+      font-family: Poppins,sans-serif;
+      font-size: 16px;
+      height: 100vh;
+      margin: 0%;
+      min-width: 1440px;
+      padding: 0%;
+  }
+.heading {
+      color: white;
+      font-size: 22px;
+      font-weight:bold;
+      height:115px;
+      margin-left: 10rem;
+      margin-top: 20rem;
+      width: 421px;
+  }
+.subtext {
+      color: white;
+      font-size: 18px;
+      height: 78px;
+      margin-left: 10rem;
+      opacity: 80%;
+      width: 500px;
+  }
+header {
+      float: left;
+  }
+.try-box {
+      margin-bottom: 200px;
+      margin-right: 100px;
+  }
+.try-box button {
+      background-color: hsl(248, 32%, 49%);
+      border-radius: 10px;
+      border: none;
+      box-shadow:  4px 3px 10px  hsl(240, 4%, 34%);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      height: 61px;
+      margin-left: 70px;
+      margin-top: 116px;
+      text-align: center;
+      width: 609px;
+  }
+.try-box button span {
+      font-weight: 100;
+      opacity: 95%;
+  }
+.input-box {
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow:  4px 3px 10px  hsl(240, 4%, 34%);
+      height: 400px;
+      margin-left: 733px;
+      margin-right: 160px;
+      margin-top: 22px;
+      padding: 35px;
+      width: 542px;
+  }
+input {
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      display: inline-block;
+      height: 15%;
+      margin: 8px 0;
+      padding: 12px 20px;
+      width: 100%;
+  }
+  .input-box button {
+      background-color:hsl(154, 59%, 51%);
+      height: 15%;
+      margin-left: 5px;
+      margin-top: 20px;
+      opacity: 80%;
+      width: 100%;
+  }
+  .input-box p {
+        font-size: 12px;
+        opacity: 70%;
+        padding-top: 19px;
+        text-align: center;
+    }
+  .input-box span {
+        color: red;
+    }
+  .error-msg-f, .error-msg-l, .error-msg-e, .error-msg-p {
+      color: hsl(0, 100%, 74%);
+      display: none;
+      font-size: 10px;
+      font-style: italic;
+      margin: 0;
+      padding-right: 10%;
+      text-align: right;
+  } 

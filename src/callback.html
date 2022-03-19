@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+
+<body>
+    <button class="clickme" value="stop" onclick="stopInterval()">
+        stop
+    </button>
+
+    <script>
+        const button = document.querySelector('.clickme');
+        function handleClick() {
+            console.log('great Clicking');
+        }
+        //registering the event handler {'handleClick()'} with event {`click`}
+        button.addEventListener('click', handleClick);
+        const handler1 = function () { console.log(`nice job..`); };
+        button.addEventListener('click', handler1);
+        const handler2 = function () { console.log(`nice time..`); };
+        button.addEventListener('click', handler1);
+        const handle2 = () => { console.log("done time to eat"); };
+        // setTimeout(handle2, 3000);
+        //  setInterval(handle2, 3000);
+        // const intervel = setInterval(handle2, 2000);
+        // setTimeout(clearTimeout(intervel), 10000);         
+        var intervel = setInterval(handle2, 2000);
+        function stopInterval() {
+            clearTimeout(intervel);
+            console.log('stoped!!!');
+        }
+    </script>
+
+    <!-- // publisher - a control or a function that raises an evet(signal)
+    //subscriber - the code /function that reacts to the event (sigma)
+    // signal - event (click, textchange, mouse over,..)
+    //one to many one event can have many subscribers -->
+
+</body>
+
+</html>

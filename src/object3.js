@@ -44,15 +44,15 @@ q.z=300;
 // console.log("o2.x" + (o2.x));
 
 
-let book ={
-    'main title': 'javascript',
-    'subtitle' : 'the definitive guide',
-    'for' :    'all audiences',
-    author:{
-        firstname:'donald',
-        surname:'Duck'
-    }
-};
+// let book ={
+//     'main title': 'javascript',
+//     'subtitle' : 'the definitive guide',
+//     'for' :    'all audiences',
+//     author:{
+//         firstname:'donald',
+//         surname:'Duck'
+//     }
+// };
 
 // let len=undefined;
 // book=null;
@@ -84,22 +84,24 @@ let book ={
 
 // let o3={x:100};
 // console.log(o3.x);
-
 // delete o3.x;
-
 // console.log(o3.x);
-
-
 // delete o3.toString;
-
+// console.log(o3.toString());
 // console.log(o3.toString);
 
-delete Object.prototype;
+// not able to delete tostring
+// member of object.prototype can't be deleted from children
+
+// delete Object.prototype;
 
 var a=1;
-delete this.a;
-function f1() {}
-delete this.f1();
+console.log(a);
+// delete this.a;
+console.log(a);
+//global variale are not deleted ,function are deleted
+// function f1() {}
+// delete this.f1();
 
 
 

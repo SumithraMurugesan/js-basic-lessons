@@ -1,0 +1,102 @@
+body, html {
+        margin: 0;
+        padding: 0;
+  }
+body {
+        font-family: 'Libre Franklin', sans-serif;
+        height: 100vh;
+        max-height: 100%;
+        min-width: 1440px;
+  }
+.wrapper {
+        margin-left: 25%;
+        margin-top: 100px;
+        width: 644px;
+  }
+.ping-logo {
+          text-align: center;
+    }
+.heading {
+            text-align: center;
+      }
+#error-msg {
+        color: red;
+        font-style: italic;
+        text-align: left;
+  }
+.heading h1 {
+        color: hsl(0, 0%, 59%);
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 25px;
+  }
+.heading p {
+        color: black;
+        font-size: 24px;
+  }
+span {
+        color: black;
+        font-weight: 700;
+  }
+.email-box input {
+        border-color: hsl(223, 100%, 88%);
+        border-radius: 40px;
+        height: 52px;
+        margin: 0px;
+        opacity: 70%;
+        text-align: left;
+        width: 425px;
+  }
+ button {
+        background-color: hsl(223, 87%, 63%);
+        border-radius: 30px;
+        border-style: none;
+        box-shadow: 2px 2px 2px 2px #d4dff7;
+        color: white;
+        font-size: 15px;
+        height: 52px;
+        opacity: 87%;
+        width: 200px;
+  }
+ button:hover {
+         opacity: 78%;
+   }
+.center-image {
+        display: flex;
+        height: 390px;
+        padding-bottom: 59px ;
+        padding-top: 84px;
+        text-align: center;
+        width: 644px;
+  }
+ p {
+        color:hsl(0, 0%, 59%) ;
+        font-size: 11px;
+        padding-bottom: 20px;
+        text-align: center;
+  }
+.social-media-icon {
+        text-align: center;
+  }
+.fa {
+        border-color:hsl(0, 0%, 59%) ;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        color: blue;
+        justify-content: space-between;
+        padding: 10px;
+        text-decoration: none;
+  }
+.fa-instagram:hover {
+            background-color: blue;
+            color: white;
+      }
+.fa-twitter:hover {
+            background-color: blue;
+            color: white;
+      }
+.fa-facebook:hover {
+        background-color: blue;
+        color: white;
+  }
