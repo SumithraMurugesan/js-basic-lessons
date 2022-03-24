@@ -9,7 +9,7 @@ return true;
 }
 else
 {
-    document.getElementById("error-msg").innerHTML="please provide a valid email address";
+document.getElementById("error-msg").innerHTML="please provide a valid email address";
 document.form1.text1.focus();
 return false;
 }

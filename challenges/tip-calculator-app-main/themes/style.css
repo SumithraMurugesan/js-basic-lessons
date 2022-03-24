@@ -1,293 +1,174 @@
-:root{
-        --empty-cyan: hsla(183, 78%, 24%, 1);
-        --light-cyan: hsla(173, 61%, 77%, 1);
-        --red: hsla(13, 70%, 61%, 1);
-        --strong-cyan: hsl(172, 67%, 45%);
-        --very-dark-cyan: hsl(183, 100%, 15%);
-    --dark-grayish-cyan1: hsl(186, 14%, 43%);
-    --dark-grayish-cyan2: hsl(184, 14%, 56%);
-    --light-grayish-cyan1: hsl(185, 41%, 84%);
-    --light-grayish-cyan2: hsl(189, 41%, 97%);
-  }
-html {
-        font-size: 10px;
-  }
-*, *::after, *::before {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
   }
 body {
-        align-content: space-evenly;
-        align-items: center;
-        background: var(--light-grayish-cyan1);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-family: 'Space Mono', monospace;
-        font-size: 2.4rem;
-        justify-content: space-around;
-        min-height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+    height: 100vh;
+    width: 100%;
   }
-h1 {
-        color: transparent;
-        font-size: 1px;
+.logo {
+    margin-bottom: 2.3rem;
+    margin-top: 1.7rem;
+    text-align: center;
   }
-#logo {
-        align-self: center;
-        height: auto;
-        margin-top: 3rem;
-        width: 8.67rem;
+.tip-calculator {
+    background-color: white;
+    border-radius: 1.4rem 1.4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
   }
-form {
-        align-items: center;
-        background: hsl(0, 0%, 100%);
-        border-radius: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: 700;
-        justify-content: space-evenly;
-        margin-top: 3rem;
-        max-width: 37.5rem;
-        padding: 3.2rem 2.4rem;
+label {
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
   }
-    input {
-            border: 2px solid transparent;
-            cursor: pointer;
-      }
-        .bill-cont, fieldset, .people-cont, #output {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-top: 3.2rem;
-                width: 31.1rem;
-          }
-        .bill-cont, .people-cont, legend {
-                color: var(--dark-grayish-cyan1);
-                font-size: 1.6rem;
-                height: 7.8rem;
-          }
-        fieldset {
-                border: none;
-          }
-            .bill-input-cont, .people-input-cont {
-                    background: var(--light-grayish-cyan2);
-                    height: 4.8rem;
-                    position: relative;
-              }            
-            .bill-input-cont > input, .people-input-cont > input {
-                    background: transparent;
-                    border: none;
-                    color: var(--very-dark-cyan);
-                    font-family: 'Space Mono', monospace;
-                    font-size: 2.4rem;
-                    font-weight: 700;
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    text-align: right;
-                    width: 100%;
-
-                top:0;
-              }
-            .bill-input-cont > img, .people-input-cont > img {
-                    left: 1.6rem;
-                    position: absolute;
-                    top: 1.6rem;
-              }
-            .red-when-zero-people {
-                    color: var(--red);
-                    display: inline;
-                    position: absolute;
-                    right: 0;
-                    text-align: right;
-              }
-            .no-warning {
-                    display: none;
-              }
-            input.red-border {
-                    border: 2px solid var(--red);
-              }
-            legend {
-                    height: 2.4rem;
-              }
-            #btn-container {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-              }
-                .btn-cont {
-                        border-radius: 0.5rem;
-                        display: block;
-                        height: 4.8rem;
-                        margin-top: 1.6rem;
-                        position: relative;
-                        width: 14.66rem;
-                  }
-                .tip-label {
-                        background: var(--very-dark-cyan);
-                        border-radius: 0.5rem;
-                        color: hsl(0, 0%, 100%);
-                        display: block;
-                        font-size: 2.4rem;
-                        height: 4.8rem;
-                        line-height: 2;
-                        position: relative;
-                        text-align: center;
-                        width: 14.66rem;
-                  }
-                input[type=radio]:checked ~ label {
-                        background: var(--strong-cyan);
-                        box-shadow: 0 0 0 4px var(--light-cyan);
-                        color: var(--very-dark-cyan);
-                  }                
-                .tipPercent {
-                        height: 4.8rem;
-                        left: 0;
-                        opacity: 0;
-                        position: absolute;
-                        width: 14.66rem;
-                        z-index: 1;
-                          top:0;
-                  }
-                .btn-cont:hover  label{
-                        background: var(--light-cyan);
-                        color: var(--very-dark-cyan);
-                  } 
-                .customBtn label {
-                        background: var(--light-grayish-cyan2);
-                        border: 2px solid transparent;
-                        color: transparent;
-                  }
-                .customBtn:hover label, .bill-input-cont:hover, .people-input-cont:hover {
-                        background: var(--light-grayish-cyan2);
-                        outline: 2px solid var(--strong-cyan);
-                  }
-                .customBtn:hover label {
-                        color: transparent;
-                  }
-                *:focus{
-                        box-shadow: 0px 0px 8px var(--strong-cyan);
-                  }
-                .customBtn label:last-of-type {
-                        opacity: 0;
-                  }
-                #customInput {
-                        background: transparent;
-                        border: 2px solid transparent;
-                        color: var(--very-dark-cyan);
-                        font-family: 'Space Mono', monospace;
-                        font-size: 2.4rem;
-                        font-weight: 700;
-                        opacity: 1;
-                        text-align: center;
-                  }
-                input[type="number"]::-webkit-inner-spin-button,
-                input[type="number"]::-webkit-outer-spin-button {
-                        -webkit-appearance: none;
-                  }
-                input[type="number"] {
-                        outline: transparent;
-                        padding-right: 1rem;
-                  }
-                .people-cont {
-                        position: relative;
-                  }
-                #custom:checked + #custom-label {
-                        background: var(--light-grayish-cyan2);
-                        color: transparent;
-                  }
-                #btn-container  input[type="radio"]:focus + label {
-                        box-shadow: 0 0 0 4px var(--light-cyan);
-                  }
-        #output {
-                background: var(--very-dark-cyan);
-                border-radius: 1rem;
-                padding: 3.6rem 2.4rem 2.4rem 2.4rem;
-          }
-            .output-numbers {
-                    justify-content: space-between;
-              }
-            p[id$="person"]{
-                    color: hsl(0, 0%, 100%);
-                    font-size: 1.6rem;
-              }
-            p[id$="person"] span{
-                    color: var(--dark-grayish-cyan2);
-                    font-size: 1.3rem;
-              }
-            .totalOutput {
-                    margin-top: 2rem;
-              }
-            p[id$="Sum"]{
-                    align-self: flex-end;
-                    font-size: 3.2rem;
-              }
-            #reset {
-                    background: var(--strong-cyan);
-                    border-radius: 0.5rem;
-                    color: hsl(183, 100%, 15%);
-                    font-family: 'Space Mono', monospace;
-                    font-size: 2rem;
-                    font-weight: 700;
-                    height: 4.8rem;
-                    margin-top: 3.2rem;
-                    width: 100%;
-              }
-            #reset:hover {
-                    background: var(--light-cyan);
-                    color: var(--very-dark-cyan);
-              }
-            .hide-visually {
-                    color: transparent;
-                    position: absolute;
-              }
-        .output-numbers {
-                color: var(--strong-cyan);
-                display: flex;
-          }
-        input#reset.empty {
-                background: var(--empty-cyan);
-                color: var(--very-dark-cyan);
-          }
-        .attribution {
-                font-size: 1.7rem;
-          }
-@media (min-width: 925px) {
-form {
-  height: 48.1rem;
-  justify-content: space-between;
-  max-width: 92rem;
-  padding: 3.2rem 3.2rem 3.2rem 4.8rem;
-  width: 100%;
-}
-.bill-cont, fieldset, .people-cont, #output {
-  width: 37.9rem;
-}
-#input {
-  height: 38.8rem;
-  margin-right: 3.2rem;
-  width: 37.9rem;
-}
-.bill-cont {
-  margin-top: 0;
-}
-.btn-cont, .tip-label, .tipPercent {
-  width: 11.7rem;
-}
-#output {
-  border-radius: 1.5rem;
-  height: 41.7rem;
-  justify-content: space-between;
-  margin-top: 0;
-  padding: 4rem;
-  width: 41.3rem;
-}
-.totalOutput {
-  margin-top: 0;
-}
-#reset {
-  margin-top: 12.2rem;
-}
-}
+input {
+    background-color: hsl(189, 41%, 97%);
+    background-position: 17px 15px;
+    background-repeat: no-repeat;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-weight: bolder;
+    outline: none;
+    padding-right: 18px;
+    padding: 5px;
+    text-align: right;
+  }
+.bill-input {
+    background-image: url("../images/icon-dollar.svg");
+  }
+.bill-input {
+    margin-bottom: 36px;
+  }
+.tip {
+    column-gap: 18px;
+    display: grid;
+    grid-template-columns: 144px 144px;
+    margin-bottom: 2rem;
+    margin-top: 0.7rem;
+    row-gap: 2em;
+  }
+.tips {
+    align-items: center;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    height: 48px;
+    justify-content: center;
+  }
+.active-tip {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+  }
+.people-input {
+    background-image: url("../images/icon-person.svg");
+    margin-bottom: 2.4rem;
+  }
+.result {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 12px;
+    color: white;
+    padding: 39px 21px;
+  }
+.tip-amount,
+.total {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+  }
+.person {
+    color: hsl(184, 14%, 56%);
+    font-size: 12px;
+    font-weight: 700;
+  }
+.amount {
+    color: hsl(172, 67%, 45%);
+    font-size: 28px;
+    font-weight: 700;
+  }
+.reset {
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 9px 0 9px 0;
+    text-align: center;
+  }
+#tip-custom input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+.peopleLabel {
+    display: flex;
+    justify-content: space-between;
+  }
+.error {
+    color: red;
+    display: none;
+  }
+@media only screen and (min-width: 1000px) {
+  body {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+  input {
+      background-position: 17px 18px;
+      padding: 9px;
+      width: 415px;
+    }
+  .tip-calculator {
+      border-radius: 1.4rem;
+      flex-direction: row;
+      height: 479px;
+      padding: 2.3rem;
+      width: 990px;
+    }
+  .partOne {
+      margin-left: 1.2rem;
+      margin-top: 1rem;
+    }
+  .bill-input {
+      margin-bottom: 3.4rem;
+    }
+  .tip {
+      column-gap: 17px;
+      grid-template-columns: 135px 135px 135px;
+      margin-bottom: 3.2rem;
+      row-gap: 1.2em;
+    }
+  .tips {
+      height: 55px;
+    }
+  .partOne {
+      display: flex;
+      flex-direction: column;
+    }
+  .result {
+      align-content: space-between;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      padding: 48px 38px;
+      width: 400px;
+    }
+  .amount {
+      font-size: 55px;
+    }
+  .reset {
+      margin-top: auto;
+      padding: 13px 0 13px 0;
+    }
+  }

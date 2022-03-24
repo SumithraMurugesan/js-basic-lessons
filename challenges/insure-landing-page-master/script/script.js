@@ -1,14 +1,13 @@
-const body = document.querySelector('body')
-const mobileBtn = document.querySelector('.mobile-btn')
-const nav = document.querySelector('.header-nav')
+const imgBtn = document.getElementById('menu-icon')
 
-const toggleMenu = () => {
-    nav.classList.toggle('show')
-    nav.classList.contains('show') 
-        ? mobileBtn.src = './images/icon-close.svg'     
-        : mobileBtn.src = './images/icon-hamburger.svg'
-    body.classList.toggle('overflow-hidden')
-    window.scrollTo(0, 0)
-}
+imgBtn.addEventListener('click', function () {
+  const menuMobile = document.getElementById('menu-mobile-items')
 
-mobileBtn.addEventListener('click', toggleMenu)
+  if (menuMobile.style.display === 'none') {
+    menuMobile.style.display = 'block'
+    imgBtn.src = './images/icon-close.svg'
+  } else {
+    menuMobile.style.display = 'none'
+    imgBtn.src = './images/icon-hamburger.svg'
+  }
+})
