@@ -1,0 +1,85 @@
+/* table {
+    background-color: white;
+    width: 30%;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+    margin: auto;
+    margin-top: 15%;
+    table-layout: fixed;
+
+}
+td {
+    height: 4em;
+    background-color: yellow;
+    border: 5px solid white;
+    color: black;
+}
+select {
+    border: none;
+    padding:1rem;
+    background-color: yellow;
+    width: 100%;
+    margin-right: 5rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    appearance: none;
+}
+input {
+    border: none;
+    background-color: yellow;
+    appearance: none;
+    outline: none;
+    text-align: center;
+}
+td {
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px; 
+}
+
+ */
+ body {
+    background-color: gray;
+  }
+  h1 {
+    margin: auto;
+  }
+  input {
+    background-color: yellow;
+    appearance: none;
+    border: none;
+    background: transparent;
+    outline: none;
+    text-align: center;
+  }
+  select {
+    border: none;
+    background: transparent;
+    outline: none;
+    background-color: yellow;
+    appearance: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  th,
+  td {
+    appearance: none;
+    background-color: yellow;
+    font-weight: 900;
+    padding: 30px;
+  }
+  table {
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    height: 50px;
+    margin: auto;
+    margin-top: 15%;
+    padding: 10px;
+    table-layout: fixed;
+    text-align: center;
+    width: 500px;
+  }
