@@ -1,15 +1,9 @@
-import { currencies } from "./currency";
-    const primaryCurrency = document.getElementById("primary");
-    const secondaryCurrency = document.getElementById("secondary");
-    primaryCurrency.innerHTML = getOptions(currencies);
-    secondaryCurrency.innerHTML = getOptions(currencies);
+import { currencies } from "./currency.js";
+import { getOptions } from "./handlers.js";
+import { myFunction } from "./money.js";
 
-    function getOptions(data) {
-          return Object.entries(data)
-            .map(
-              ([country, currency]) =>
-                `<option value="${country}">${country == 'MSG' ? " " : country}  ${currency}</option>`
-            )
-            .join("");
-        }
-        export {primaryCurrency,secondaryCurrency,getOptions};
+const primaryCurrency = document.getElementById("primary");
+const secondaryCurrency = document.getElementById("secondary");
+primaryCurrency.innerHTML = getOptions(currencies);
+secondaryCurrency.innerHTML = getOptions(currencies);
+document.getElementById("amount").addEventListener("change", myFunction);
