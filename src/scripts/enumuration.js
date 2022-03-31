@@ -1,11 +1,11 @@
-// var numbers = { x:1 , y:2 , z:3 };
-// for ( i in numbers ){
-//     // console.log(i + '-' + numbers[i]);
-//     // console.log(numbers.hasOwnProperty(i));   
-//         if (numbers.hasOwnProperty(i));
-//             console.log(i + '-' + numbers[i]);
+var numbers = { x:1 , y:2 , z:3 };
+for ( i in numbers ){
+    // console.log(i + '-' + numbers[i]);
+    // console.log(numbers.hasOwnProperty(i));   
+        if (numbers.hasOwnProperty(i));
+            console.log(i + '-' + numbers[i]);
 
-// }
+}
 // var o1 = { r: 10, s: 20, t: 30, u: 40, v: 50, w: 60, x: 70, y: 80, z: 90 };
 // console.log(o1);
 // createCopy() function in "enumuration.js" copied properties from one object to
