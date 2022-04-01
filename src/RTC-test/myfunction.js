@@ -4,8 +4,6 @@ export function myFunction() {
   input = document.getElementById("find").value;
   table = document.getElementById("table");
   tr = table.getElementsByTagName("tr");
-  table1 = document.getElementById("table1");
-  tr1 = table.getElementsByTagName("tr");
   console.log(tr.length);
   if (tr.length === 1) {
     document.getElementById("msg").innerHTML = "there is no record found";
