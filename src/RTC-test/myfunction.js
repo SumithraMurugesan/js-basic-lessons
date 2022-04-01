@@ -1,15 +1,12 @@
 export function myFunction() {
-  
-  var input, i, j;
+  var input, i, table, tr;
   input = document.getElementById("find").value;
   table = document.getElementById("table");
   tr = table.getElementsByTagName("tr");
-  console.log(tr.length);
   if (tr.length === 1) {
     document.getElementById("msg").innerHTML = "there is no record found";
   } else {
     for (i = 1; i < tr.length; i++) {
-      console.log(table.rows[i].cells[10].innerHTML);
       if (table.rows[i].cells[10].innerHTML === input) {
         var newRow1 = table1.insertRow(table1.length),
           cell1 = newRow1.insertCell(0),
